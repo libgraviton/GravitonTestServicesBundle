@@ -1,6 +1,6 @@
 {
-    "name": "graviton/test-servcies-bundle",
-    "description": "Graviton Service Bundle containing some service definitions usefull for testing.",
+    "name": "graviton/test-services-bundle",
+    "description": "Graviton service bundle containing some service definitions useful for testing.",
     "type": "library",
     "license": "GPL",
     "authors": [
