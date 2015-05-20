@@ -1,0 +1,14 @@
+{
+    "name": "graviton/test-services-bundle",
+    "description": "Graviton service bundle containing some service definitions useful for testing.",
+    "type": "library",
+    "license": "GPL",
+    "authors": [
+        {
+            "name": "Lucas Bickel",
+            "email": "lucas.bickel@swisscom.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "prefer-stable": true
+}
