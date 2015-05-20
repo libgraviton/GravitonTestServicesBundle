@@ -1,6 +1,6 @@
 {
-    "name": "graviton/customer-bundle",
-    "description": "Graviton Service Bundle containing a very basic customer service used for testing.",
+    "name": "graviton/test-servcies-bundle",
+    "description": "Graviton Service Bundle containing some service definitions usefull for testing.",
     "type": "library",
     "license": "GPL",
     "authors": [

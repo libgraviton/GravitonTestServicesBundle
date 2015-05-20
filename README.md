@@ -1,5 +1,5 @@
 # Simple Graviton Customer Service
 
-This is a very simple [graviton](https://github.com/libgraviton/graviton) bundle that implements a ``/person/customer`` service in graviton.
+This is a very simple [graviton](https://github.com/libgraviton/graviton) bundle that implements some basic services.
 
-It is mainly a test case that is part of our integration suite.
+The services in this bundle are mainly test cases that are part of our integration suite.
