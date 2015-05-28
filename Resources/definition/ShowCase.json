@@ -1,5 +1,5 @@
 {
-    "id": "Showcase",
+    "id": "ShowCase",
     "description": "A service showcasing all of our generator features",
     "service": {
         "readOnly": false,
