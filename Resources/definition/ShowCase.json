@@ -77,6 +77,13 @@
                     {
                         "$ref": "http://localhost/core/app/admin"
                     }
+                ],
+                "nestedCustomers": [
+                    {
+                        "id": "1234",
+                        "name": "Hans",
+                        "$ref": "http://localhost/core/app/admin"
+                    }
                 ]
             },
             {
@@ -245,6 +252,12 @@
                 "type": "extref",
                 "title": "Nested array of apps",
                 "exposeAs": "$ref"
+            },
+            {
+                "name": "nestedCustomers",
+                "type": "class:GravitonDyn\\CustomerBundle\\Document\\Customer[]",
+                "title": "customers",
+                "description": "nested list of customers"
             }
         ]
     }
