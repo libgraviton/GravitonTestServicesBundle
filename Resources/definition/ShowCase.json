@@ -231,7 +231,6 @@
                 "name": "contactCode.text",
                 "type": "varchar",
                 "translatable": true,
-                "required": true,
                 "title": "Meaning of the code",
                 "description": "Some text to the code.."
             },
