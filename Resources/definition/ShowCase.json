@@ -21,26 +21,26 @@
                     "type": "home",
                     "value": "joe@example.com",
                     "protocol": "mailto",
-                    "$ref": "mailto:joe@example.com"
+                    "uri": "mailto:joe@example.com"
                 },
                 "contacts": [
                     {
                         "type": "business",
                         "value": "+41791456214",
                         "protocol": "tel",
-                        "$ref": "tel:+41791456214"
+                        "uri": "tel:+41791456214"
                     },
                     {
                         "type": "home",
                         "value": "+41332434479",
                         "protocol": "tel",
-                        "$ref": "tel:+41332434479"
+                        "uri": "tel:+41332434479"
                     },
                     {
                         "type": "home",
                         "value": "someuser",
                         "protocol": "skype",
-                        "$ref": "skype:someuser"
+                        "uri": "skype:someuser"
                     }
                 ],
                 "contactCode": {
@@ -99,26 +99,26 @@
                     "type": "business",
                     "value": "dave@example-company.com",
                     "protocol": "mailto",
-                    "$ref": "mailto:dave@example-company.com"
+                    "uri": "mailto:dave@example-company.com"
                 },
                 "contacts": [
                     {
                         "type": "home",
                         "value": "+41767845112",
                         "protocol": "tel",
-                        "$ref": "tel:+41767845112"
+                        "uri": "tel:+41767845112"
                     },
                     {
                         "type": "home",
                         "value": "+41317415488",
                         "protocol": "tel",
-                        "$ref": "tel:+41317415488"
+                        "uri": "tel:+41317415488"
                     },
                     {
                         "type": "business",
                         "value": "another@example.com",
                         "protocol": "jabber",
-                        "$ref": "jabber:another@example.com"
+                        "uri": "jabber:another@example.com"
                     }
                 ],
                 "contactCode": {
@@ -231,7 +231,6 @@
                 "name": "contactCode.text",
                 "type": "varchar",
                 "translatable": true,
-                "required": true,
                 "title": "Meaning of the code",
                 "description": "Some text to the code.."
             },
