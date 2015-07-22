@@ -43,6 +43,33 @@
                         "uri": "skype:someuser"
                     }
                 ],
+                "deepNestedArray": {
+                    "very": {
+                        "deep": {
+                            "glorious": [
+                                {"object": "the dude"},
+                                {"object": "the dude2"}
+                            ]
+                        }
+                    }
+                },
+                "deepNestedProperty": {
+                    "thisis": {
+                        "one": {
+                            "goes": {
+                                "very": {
+                                    "deep": {
+                                        "down": {
+                                            "thats": {
+                                                "good": "it's probably a good thing"
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                },
                 "contactCode": {
                     "someDate": "2012-12-21T00:00:00Z",
                     "text": {"en": "Ad mailing campaign 2012"}
@@ -239,6 +266,18 @@
                 "type": "varchar",
                 "title": "Name of nested array",
                 "description": "Some text"
+            },
+            {
+                "name": "deepNestedArray.very.deep.glorious.0.object",
+                "type": "varchar",
+                "title": "Array of deep nested objects",
+                "description": "Deep nesting is good.. is it?"
+            },
+            {
+                "name": "deepNestedProperty.thisis.one.goes.very.deep.down.thats.good",
+                "type": "varchar",
+                "title": "Deep string",
+                "description": "This one goes deep..."
             },
             {
                 "name": "unstructuredObject",
