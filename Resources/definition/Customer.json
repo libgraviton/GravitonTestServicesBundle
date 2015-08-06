@@ -48,7 +48,8 @@
                 "type": "extref",
                 "description": "Link a customer with things",
                 "title": "Link",
-                "exposeAs": "$ref"
+                "exposeAs": "$ref",
+                "collection": ["*"]
             }
         ]
     }
