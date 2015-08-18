@@ -9,19 +9,19 @@
         "routerBase": "/person/customer/",
         "fixtures": [
             {
-                "id": 100,
+                "id": "100",
                 "name": "Acme Corps."
             },
             {
-                "id": 101,
+                "id": "101",
                 "name": "Widgets4U gmbh"
             },
             {
-                "id": 102,
+                "id": "102",
                 "name": "Smith Family"
             },
             {
-                "id": 103,
+                "id": "103",
                 "name": "John Doe"
             }
         ]
@@ -32,7 +32,7 @@
         "fields": [
             {
                 "name": "id",
-                "type": "int",
+                "type": "string",
                 "description": "unique identifier",
                 "title": "ID"
             },
