@@ -8,7 +8,7 @@
         "roles": ["GRAVITON_USER"],
         "fixtures": [
             {
-                "id": 500,
+                "id": "500",
                 "anotherInt": 6555488894525,
                 "testField": {"en": "a test string"},
                 "email": "joe@example.com",
@@ -114,7 +114,7 @@
                 ]
             },
             {
-                "id": 600,
+                "id": "600",
                 "anotherInt": 544615898841,
                 "testField": {"en": "some text"},
                 "email": "dave@example-company.com",
