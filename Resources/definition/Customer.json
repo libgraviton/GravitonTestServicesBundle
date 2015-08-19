@@ -2,19 +2,20 @@
     "id": "Customer",
     "description": "Simple Customer Service",
     "service": {
-        "baseController": "\\Graviton\\PersonBundle\\Controller\\AbstractCustomerController",
         "fixtureOrder": 45,
-        "parent": "graviton.person.controller.abstractcustomer",
         "readOnly": false,
+        "recordOriginModifiable": false,
         "routerBase": "/person/customer/",
         "fixtures": [
             {
                 "id": "100",
-                "name": "Acme Corps."
+                "name": "Acme Corps.",
+                "recordOrigin": "core"
             },
             {
                 "id": "101",
-                "name": "Widgets4U gmbh"
+                "name": "Widgets4U gmbh",
+                "recordOrigin": "otherCore"
             },
             {
                 "id": "102",
