@@ -1,0 +1,37 @@
+{
+    "id": "TestCaseReadOnly",
+    "description": "Simple service for test cases",
+    "service": {
+        "readOnly": true,
+        "routerBase": "/testcase/readonly/",
+        "fixtures": [
+            {
+              "id": "101",
+              "name": "Test entry"
+            },
+            {
+              "id": "102",
+              "name": "test name"
+            }
+        ]
+    },
+    "target": {
+        "indexes": [],
+        "relations": [],
+        "fields": [
+            {
+                "name": "id",
+                "type": "string",
+                "description": "unique identifier",
+                "title": "ID"
+            },
+            {
+                "name": "name",
+                "type": "varchar",
+                "description": "simple name",
+                "title": "Name",
+                "required": true
+            }
+        ]
+    }
+}
