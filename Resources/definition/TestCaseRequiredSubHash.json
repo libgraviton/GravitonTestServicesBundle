@@ -1,0 +1,64 @@
+{
+    "id": "TestCaseRequiredSubHash",
+    "isSubDocument": true,
+    "target": {
+        "fields": [
+            {
+                "name": "id",
+                "type": "string"
+            },
+            {
+                "name": "name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "name": "value",
+                "type": "integer",
+                "required": true
+            },
+            {
+                "name": "optional",
+                "type": "datetime",
+                "required": false
+            },
+
+            {
+                "name": "requiredSubHash.name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "name": "requiredSubHash.value",
+                "type": "integer",
+                "required": true
+            },
+            {
+                "name": "requiredSubHash.optional",
+                "type": "datetime",
+                "required": false
+            },
+
+            {
+                "name": "optionalSubHash",
+                "type": "hash",
+                "required": false
+            },
+            {
+                "name": "optionalSubHash.name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "name": "optionalSubHash.value",
+                "type": "integer",
+                "required": true
+            },
+            {
+                "name": "optionalSubHash.optional",
+                "type": "datetime",
+                "required": false
+            }
+        ]
+    }
+}
