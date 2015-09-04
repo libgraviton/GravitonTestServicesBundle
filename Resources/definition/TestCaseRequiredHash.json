@@ -1,0 +1,110 @@
+{
+    "id": "TestCaseRequiredHash",
+    "service": {
+        "readOnly": false,
+        "routerBase": "/testcase/requiredHash/",
+        "fixtures": [
+            {
+                "id": "all-fields",
+                "name": "Test 1",
+                "optionalHash": {
+                    "name": "a",
+                    "value": 1,
+                    "optional": "2015-09-03T00:00:00+00:00",
+
+                    "optionalSubHash": {
+                        "name": "a",
+                        "value": 1,
+                        "optional": "2015-09-03T00:00:00+00:00"
+                    },
+                    "requiredSubHash": {
+                        "name": "a",
+                        "value": 1
+                    }
+                },
+                "requiredHash": {
+                    "name": "a",
+                    "value": 1,
+
+                    "optionalSubHash": {
+                        "name": "a",
+                        "value": 1,
+                        "optional": "2015-09-03T00:00:00+00:00"
+                    },
+                    "requiredSubHash": {
+                        "name": "a",
+                        "value": 1
+                    }
+                }
+            },
+            {
+                "id": "no-optional-subhash",
+                "name": "Test 2",
+                "optionalHash": {
+                    "name": "a",
+                    "value": 1,
+
+                    "requiredSubHash": {
+                        "name": "a",
+                        "value": 1
+                    }
+                },
+                "requiredHash": {
+                    "name": "a",
+                    "value": 1,
+
+                    "requiredSubHash": {
+                        "name": "a",
+                        "value": 1
+                    }
+                }
+            },
+            {
+                "id": "no-optional-hash",
+                "name": "Test 3",
+                "requiredHash": {
+                    "name": "a",
+                    "value": 1,
+
+                    "requiredSubHash": {
+                        "name": "a",
+                        "value": 1
+                    }
+                }
+            }
+        ]
+    },
+    "target": {
+        "relations": [
+            {
+                "localProperty": "optionalHash",
+                "type": "embed"
+            },
+            {
+                "localProperty": "requiredHash",
+                "type": "embed"
+            }
+        ],
+        "fields": [
+            {
+                "name": "id",
+                "type": "string"
+            },
+            {
+                "name": "name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "name": "optionalHash",
+                "type": "class:GravitonDyn\\TestCaseRequiredSubHashBundle\\Document\\TestCaseRequiredSubHash",
+                "required": false
+            },
+            {
+                "name": "requiredHash",
+                "type": "class:GravitonDyn\\TestCaseRequiredSubHashBundle\\Document\\TestCaseRequiredSubHash",
+                "required": true
+            }
+        ]
+    }
+}
