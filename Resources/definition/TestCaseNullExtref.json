@@ -1,0 +1,105 @@
+{
+  "id": "TestCaseNullExtref",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/nullExtref/",
+    "fixtures": [
+      {
+        "id": "testdata",
+        "optionalExtref": {
+          "$ref": null
+        },
+        "requiredExtref": {
+          "$ref": "http://localhost/core/app/admin"
+        },
+        "optionalExtrefArray": [
+          {
+            "$ref": null
+          }
+        ],
+        "requiredExtrefArray": [
+          {
+            "$ref": "http://localhost/core/app/admin"
+          }
+        ],
+        "optionalExtrefDeep": [
+          {
+            "deep": [
+              {
+                "deep": {
+                  "deep": [
+                    {
+                      "$ref": null
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ],
+        "requiredExtrefDeep": [
+          {
+            "deep": [
+              {
+                "deep": {
+                  "deep": [
+                    {
+                      "$ref": "http://localhost/core/app/admin"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+
+      {
+        "name": "optionalExtref.ref",
+        "type": "extref",
+        "exposeAs": "$ref",
+        "required": false
+      },
+      {
+        "name": "requiredExtref.ref",
+        "type": "extref",
+        "exposeAs": "$ref",
+        "required": true
+      },
+
+      {
+        "name": "optionalExtrefArray.0.ref",
+        "type": "extref",
+        "exposeAs": "$ref",
+        "required": false
+      },
+      {
+        "name": "requiredExtrefArray.0.ref",
+        "type": "extref",
+        "exposeAs": "$ref",
+        "required": true
+      },
+
+      {
+        "name": "optionalExtrefDeep.0.deep.0.deep.deep.0.ref",
+        "type": "extref",
+        "exposeAs": "$ref",
+        "required": false
+      },
+      {
+        "name": "requiredExtrefDeep.0.deep.0.deep.deep.0.ref",
+        "type": "extref",
+        "exposeAs": "$ref",
+        "required": true
+      }
+    ]
+  }
+}
