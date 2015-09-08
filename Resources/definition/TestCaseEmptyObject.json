@@ -1,0 +1,56 @@
+{
+  "id": "TestCaseEmptyObject",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/emptyObject/",
+    "fixtures": [
+      {
+        "id": "emptyAll",
+        "hash": {},
+        "unstructured": {}
+      },
+      {
+        "id": "emptyHash",
+        "hash": {},
+        "unstructured": {
+          "empty": "data"
+        }
+      },
+      {
+        "id": "emptyUnstructured",
+        "hash": {
+          "empty": "data"
+        },
+        "unstructured": {}
+      },
+      {
+        "id": "noEmpty",
+        "hash": {
+          "empty": "data"
+        },
+        "unstructured": {
+          "empty": "data"
+        }
+      }
+    ]
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+
+      {
+        "name": "hash.empty",
+        "type": "string",
+        "required": false
+      },
+      {
+        "name": "unstructured",
+        "type": "object",
+        "required": false
+      }
+    ]
+  }
+}
