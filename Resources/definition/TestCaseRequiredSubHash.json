@@ -14,7 +14,7 @@
             },
             {
                 "name": "value",
-                "type": "integer",
+                "type": "int",
                 "required": true
             },
             {
@@ -30,7 +30,7 @@
             },
             {
                 "name": "requiredSubHash.value",
-                "type": "integer",
+                "type": "int",
                 "required": true
             },
             {
@@ -51,7 +51,7 @@
             },
             {
                 "name": "optionalSubHash.value",
-                "type": "integer",
+                "type": "int",
                 "required": true
             },
             {
