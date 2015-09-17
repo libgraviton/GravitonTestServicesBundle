@@ -2,7 +2,7 @@
   "id": "TestCaseNullExtref",
   "service": {
     "readOnly": false,
-    "routerBase": "/testcase/nullExtref/",
+    "routerBase": "/testcase/nullextref/",
     "fixtures": [
       {
         "id": "testdata",
