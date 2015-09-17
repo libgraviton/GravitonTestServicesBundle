@@ -2,7 +2,7 @@
   "id": "TestCaseEmptyObject",
   "service": {
     "readOnly": false,
-    "routerBase": "/testcase/emptyObject/",
+    "routerBase": "/testcase/emptyobject/",
     "fixtures": [
       {
         "id": "emptyAll",
