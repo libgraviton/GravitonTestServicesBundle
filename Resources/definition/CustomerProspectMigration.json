@@ -1,6 +1,6 @@
 {
   "id": "CustomerProspectMigration",
-  "description": "Migrate all nessecary itmes from a 'prospect' customer to 'core' customer",
+  "description": "Migrate all necessary items from a 'prospect' customer to 'core' customer",
   "service": {
     "readOnly": false,
     "routerBase": "/person/customer/prospectmigration/",
