@@ -27,6 +27,11 @@
                     {"c": "d"},
                     {}
                 ],
+                "datearray": [
+                    "2015-10-01T00:00:01+0300",
+                    "2015-09-30T23:59:59+0000",
+                    "2016-02-29T01:01:01+0100"
+                ],
 
                 "hash": {
                     "intarray": [
@@ -48,6 +53,11 @@
                         {"a": "b"},
                         {"c": "d"},
                         {}
+                    ],
+                    "datearray": [
+                        "2015-10-01T00:00:01+0300",
+                        "2015-09-30T23:59:59+0000",
+                        "2016-02-29T01:01:01+0100"
                     ]
                 },
 
@@ -72,6 +82,11 @@
                             {"a": "b"},
                             {"c": "d"},
                             {}
+                        ],
+                        "datearray": [
+                            "2015-10-01T00:00:01+0300",
+                            "2015-09-30T23:59:59+0000",
+                            "2016-02-29T01:01:01+0100"
                         ]
                     }
                 ]
@@ -98,6 +113,10 @@
                 "type": "boolean"
             },
             {
+                "name": "datearray.0",
+                "type": "datetime"
+            },
+            {
                 "name": "hasharray.0",
                 "type": "object"
             },
@@ -115,6 +134,10 @@
                 "type": "boolean"
             },
             {
+                "name": "hash.datearray.0",
+                "type": "datetime"
+            },
+            {
                 "name": "hash.hasharray.0",
                 "type": "object"
             },
@@ -130,6 +153,10 @@
             {
                 "name": "arrayhash.0.boolarray.0",
                 "type": "boolean"
+            },
+            {
+                "name": "arrayhash.0.datearray.0",
+                "type": "datetime"
             },
             {
                 "name": "arrayhash.0.hasharray.0",
