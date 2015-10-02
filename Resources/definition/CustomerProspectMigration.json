@@ -1,0 +1,40 @@
+{
+  "id": "CustomerProspectMigration",
+  "description": "Migrate all necessary items from a 'prospect' customer to 'core' customer",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/person/customer/prospectmigration/",
+    "fixtures": []
+  },
+  "target": {
+    "indexes": [],
+    "relations": [],
+    "fields": [
+      {
+        "name": "id",
+        "type": "varchar",
+        "title": "Worker ID",
+        "description": "Unique identifier and a short string identifying a single worker",
+        "required": true
+      },
+      {
+        "name": "from.ref",
+        "type": "string",
+        "exposeAs": "$ref",
+        "title": "Migrate from",
+        "collection": ["Customer"],
+        "description": "A prospect customer, which will be migrated",
+        "required": true
+      },
+      {
+        "name": "to.ref",
+        "type": "string",
+        "exposeAs": "$ref",
+        "title": "Migrate to",
+        "collection": ["Customer"],
+        "description": "Migrate to this new core customer",
+        "required": true
+      }
+    ]
+  }
+}
