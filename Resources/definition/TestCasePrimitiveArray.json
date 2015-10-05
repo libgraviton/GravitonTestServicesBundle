@@ -1,0 +1,167 @@
+{
+    "id": "TestCasePrimitiveArray",
+    "service": {
+        "readOnly": false,
+        "routerBase": "/testcase/primitivearray/",
+        "fixtures": [
+            {
+                "id": "testdata",
+
+                "intarray": [
+                    1,
+                    2,
+                    3
+                ],
+                "strarray": [
+                    "a",
+                    "b",
+                    "c"
+                ],
+                "boolarray": [
+                    true,
+                    false,
+                    true
+                ],
+                "hasharray": [
+                    {"a": "b"},
+                    {"c": "d"},
+                    {}
+                ],
+                "datearray": [
+                    "2015-10-01T00:00:01+0300",
+                    "2015-09-30T23:59:59+0000",
+                    "2016-02-29T01:01:01+0100"
+                ],
+
+                "hash": {
+                    "intarray": [
+                        1,
+                        2,
+                        3
+                    ],
+                    "strarray": [
+                        "a",
+                        "b",
+                        "c"
+                    ],
+                    "boolarray": [
+                        true,
+                        false,
+                        true
+                    ],
+                    "hasharray": [
+                        {"a": "b"},
+                        {"c": "d"},
+                        {}
+                    ],
+                    "datearray": [
+                        "2015-10-01T00:00:01+0300",
+                        "2015-09-30T23:59:59+0000",
+                        "2016-02-29T01:01:01+0100"
+                    ]
+                },
+
+                "arrayhash": [
+                    {
+                        "intarray": [
+                            1,
+                            2,
+                            3
+                        ],
+                        "strarray": [
+                            "a",
+                            "b",
+                            "c"
+                        ],
+                        "boolarray": [
+                            true,
+                            false,
+                            true
+                        ],
+                        "hasharray": [
+                            {"a": "b"},
+                            {"c": "d"},
+                            {}
+                        ],
+                        "datearray": [
+                            "2015-10-01T00:00:01+0300",
+                            "2015-09-30T23:59:59+0000",
+                            "2016-02-29T01:01:01+0100"
+                        ]
+                    }
+                ]
+            }
+        ]
+    },
+    "target": {
+        "fields": [
+            {
+                "name": "id",
+                "type": "string"
+            },
+
+            {
+                "name": "intarray.0",
+                "type": "int"
+            },
+            {
+                "name": "strarray.0",
+                "type": "string"
+            },
+            {
+                "name": "boolarray.0",
+                "type": "boolean"
+            },
+            {
+                "name": "datearray.0",
+                "type": "datetime"
+            },
+            {
+                "name": "hasharray.0",
+                "type": "object"
+            },
+
+            {
+                "name": "hash.intarray.0",
+                "type": "int"
+            },
+            {
+                "name": "hash.strarray.0",
+                "type": "string"
+            },
+            {
+                "name": "hash.boolarray.0",
+                "type": "boolean"
+            },
+            {
+                "name": "hash.datearray.0",
+                "type": "datetime"
+            },
+            {
+                "name": "hash.hasharray.0",
+                "type": "object"
+            },
+
+            {
+                "name": "arrayhash.0.intarray.0",
+                "type": "int"
+            },
+            {
+                "name": "arrayhash.0.strarray.0",
+                "type": "string"
+            },
+            {
+                "name": "arrayhash.0.boolarray.0",
+                "type": "boolean"
+            },
+            {
+                "name": "arrayhash.0.datearray.0",
+                "type": "datetime"
+            },
+            {
+                "name": "arrayhash.0.hasharray.0",
+                "type": "object"
+            }
+        ]
+    }
+}
