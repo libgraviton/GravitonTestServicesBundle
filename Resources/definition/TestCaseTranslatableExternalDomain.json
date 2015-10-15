@@ -1,0 +1,22 @@
+{
+  "id": "TestCaseTranslatableExternalDomain",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/external/translatable",
+    "fixtures": []
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "myString",
+        "type": "string",
+        "translatable": true,
+        "required": true
+      }
+    ]
+  }
+}
