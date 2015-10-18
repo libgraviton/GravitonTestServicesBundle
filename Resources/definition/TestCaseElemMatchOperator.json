@@ -1,0 +1,148 @@
+{
+    "id": "TestCaseElemMatchOperator",
+    "service": {
+        "routerBase": "/testcase/elemmatch-operator",
+        "fixtures": [
+            {
+                "id": "a",
+                "name": "A",
+
+                "array": [
+                    {
+                        "type": "a",
+                        "name": "A",
+                        "$ref": "http://localhost/core/module/a"
+                    },
+                    {
+                        "type": "b",
+                        "name": "B",
+                        "$ref": "http://localhost/core/module/b"
+                    }
+                ],
+                "deep": {
+                    "deep": [
+                        {
+                            "name": "A",
+                            "array": [
+                                {
+                                    "type": "aa",
+                                    "name": "AA",
+                                    "$ref": "http://localhost/core/module/aa"
+                                },
+                                {
+                                    "type": "bb",
+                                    "name": "BB",
+                                    "$ref": "http://localhost/core/module/bb"
+                                }
+                            ]
+                        },
+                        {
+                            "name": "C",
+                            "array": [
+                                {
+                                    "type": "cc",
+                                    "name": "CC",
+                                    "$ref": "http://localhost/core/module/cc"
+                                },
+                                {
+                                    "type": "b",
+                                    "name": "B",
+                                    "$ref": "http://localhost/core/module/dd"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            },
+            {
+                "id": "x",
+                "name": "X",
+
+                "array": [
+                    {
+                        "type": "x",
+                        "name": "X",
+                        "$ref": "http://localhost/core/module/x"
+                    },
+                    {
+                        "type": "y",
+                        "name": "Y",
+                        "$ref": "http://localhost/core/module/y"
+                    }
+                ],
+                "deep": {
+                    "deep": [
+                        {
+                            "name": "X",
+                            "array": [
+                                {
+                                    "type": "xx",
+                                    "name": "XX",
+                                    "$ref": "http://localhost/core/module/xx"
+                                },
+                                {
+                                    "type": "yy",
+                                    "name": "YY",
+                                    "$ref": "http://localhost/core/module/yy"
+                                }
+                            ]
+                        },
+                        {
+                            "array": [
+                                {
+                                    "type": "zz",
+                                    "name": "ZZ",
+                                    "$ref": "http://localhost/core/module/zz"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "target": {
+        "fields": [
+            {
+                "name": "id",
+                "type": "string"
+            },
+            {
+                "name": "name",
+                "type": "string"
+            },
+
+            {
+                "name": "array.0.type",
+                "type": "string"
+            },
+            {
+                "name": "array.0.name",
+                "type": "string"
+            },
+            {
+                "name": "array.0.ref",
+                "type": "extref",
+                "exposeAs": "$ref"
+            },
+
+            {
+                "name": "deep.deep.0.name",
+                "type": "string"
+            },
+            {
+                "name": "deep.deep.0.array.0.type",
+                "type": "string"
+            },
+            {
+                "name": "deep.deep.0.array.0.name",
+                "type": "string"
+            },
+            {
+                "name": "deep.deep.0.array.0.ref",
+                "type": "extref",
+                "exposeAs": "$ref"
+            }
+        ]
+    }
+}
