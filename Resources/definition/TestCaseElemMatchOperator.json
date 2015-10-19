@@ -5,48 +5,48 @@
         "fixtures": [
             {
                 "id": "a",
-                "name": "A",
+                "$name": "A",
 
-                "array": [
+                "$array": [
                     {
-                        "type": "a",
-                        "name": "A",
+                        "$type": "a",
+                        "$name": "A",
                         "$ref": "http://localhost/core/module/a"
                     },
                     {
-                        "type": "b",
-                        "name": "B",
+                        "$type": "b",
+                        "$name": "B",
                         "$ref": "http://localhost/core/module/b"
                     }
                 ],
-                "deep": {
-                    "deep": [
+                "$deep": {
+                    "$deep": [
                         {
-                            "name": "A",
-                            "array": [
+                            "$name": "A",
+                            "$array": [
                                 {
-                                    "type": "aa",
-                                    "name": "AA",
+                                    "$type": "aa",
+                                    "$name": "AA",
                                     "$ref": "http://localhost/core/module/aa"
                                 },
                                 {
-                                    "type": "bb",
-                                    "name": "BB",
+                                    "$type": "bb",
+                                    "$name": "BB",
                                     "$ref": "http://localhost/core/module/bb"
                                 }
                             ]
                         },
                         {
-                            "name": "C",
-                            "array": [
+                            "$name": "C",
+                            "$array": [
                                 {
-                                    "type": "cc",
-                                    "name": "CC",
+                                    "$type": "cc",
+                                    "$name": "CC",
                                     "$ref": "http://localhost/core/module/cc"
                                 },
                                 {
-                                    "type": "b",
-                                    "name": "B",
+                                    "$type": "b",
+                                    "$name": "B",
                                     "$ref": "http://localhost/core/module/dd"
                                 }
                             ]
@@ -56,42 +56,43 @@
             },
             {
                 "id": "x",
-                "name": "X",
+                "$name": "X",
 
-                "array": [
+                "$array": [
                     {
-                        "type": "x",
-                        "name": "X",
+                        "$type": "x",
+                        "$name": "X",
                         "$ref": "http://localhost/core/module/x"
                     },
                     {
-                        "type": "y",
-                        "name": "Y",
+                        "$type": "y",
+                        "$name": "Y",
                         "$ref": "http://localhost/core/module/y"
                     }
                 ],
-                "deep": {
-                    "deep": [
+                "$deep": {
+                    "$deep": [
                         {
-                            "name": "X",
-                            "array": [
+                            "$name": "X",
+                            "$array": [
                                 {
-                                    "type": "xx",
-                                    "name": "XX",
+                                    "$type": "xx",
+                                    "$name": "XX",
                                     "$ref": "http://localhost/core/module/xx"
                                 },
                                 {
-                                    "type": "yy",
-                                    "name": "YY",
+                                    "$type": "yy",
+                                    "$name": "YY",
                                     "$ref": "http://localhost/core/module/yy"
                                 }
                             ]
                         },
                         {
-                            "array": [
+                            "$name": "Z",
+                            "$array": [
                                 {
-                                    "type": "zz",
-                                    "name": "ZZ",
+                                    "$type": "zz",
+                                    "$name": "ZZ",
                                     "$ref": "http://localhost/core/module/zz"
                                 }
                             ]
@@ -109,16 +110,19 @@
             },
             {
                 "name": "name",
-                "type": "string"
+                "type": "string",
+                "exposeAs": "$name"
             },
 
             {
                 "name": "array.0.type",
-                "type": "string"
+                "type": "string",
+                "exposeAs": "$type"
             },
             {
                 "name": "array.0.name",
-                "type": "string"
+                "type": "string",
+                "exposeAs": "$name"
             },
             {
                 "name": "array.0.ref",
@@ -128,15 +132,18 @@
 
             {
                 "name": "deep.deep.0.name",
-                "type": "string"
+                "type": "string",
+                "exposeAs": "$name"
             },
             {
                 "name": "deep.deep.0.array.0.type",
-                "type": "string"
+                "type": "string",
+                "exposeAs": "$type"
             },
             {
                 "name": "deep.deep.0.array.0.name",
-                "type": "string"
+                "type": "string",
+                "exposeAs": "$name"
             },
             {
                 "name": "deep.deep.0.array.0.ref",
