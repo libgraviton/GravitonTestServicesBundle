@@ -115,6 +115,11 @@
             },
 
             {
+                "name": "array.0",
+                "type": "object",
+                "exposeAs": "$array"
+            },
+            {
                 "name": "array.0.type",
                 "type": "string",
                 "exposeAs": "$type"
@@ -131,9 +136,25 @@
             },
 
             {
+                "name": "deep",
+                "type": "object",
+                "exposeAs": "$deep"
+            },
+            {
+                "name": "deep.deep.0",
+                "type": "object",
+                "exposeAs": "$deep"
+            },
+            {
                 "name": "deep.deep.0.name",
                 "type": "string",
                 "exposeAs": "$name"
+            },
+
+            {
+                "name": "deep.deep.0.array.0",
+                "type": "object",
+                "exposeAs": "$array"
             },
             {
                 "name": "deep.deep.0.array.0.type",
