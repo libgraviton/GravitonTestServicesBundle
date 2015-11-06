@@ -1,0 +1,80 @@
+{
+    "id": "TestCaseTranslatableArray",
+    "service": {
+        "readOnly": false,
+        "routerBase": "/testcase/translatable-array/",
+        "fixtures": [
+            {
+                "id": "testdata",
+                "field": {
+                    "en": "EN-1"
+                },
+                "array": [
+                    {
+                        "en": "EN-2"
+                    },
+                    {
+                        "en": "EN-3"
+                    }
+                ],
+                "deep": {
+                    "deep": [
+                        {
+                            "field": {
+                                "en": "EN-4"
+                            },
+                            "array": [
+                                {
+                                    "en": "EN-5"
+                                },
+                                {
+                                    "en": "EN-6"
+                                }
+                            ]
+                        },
+                        {
+                            "field": {
+                                "en": "EN-7"
+                            },
+                            "array": [
+                                {
+                                    "en": "EN-8"
+                                }
+                            ]
+                        }
+                    ]
+                }
+            }
+        ]
+    },
+    "target": {
+        "fields": [
+            {
+                "name": "id",
+                "type": "string"
+            },
+
+            {
+                "name": "field",
+                "type": "string",
+                "translatable": true
+            },
+            {
+                "name": "array.0",
+                "type": "string",
+                "translatable": true
+            },
+
+            {
+                "name": "deep.deep.0.field",
+                "type": "string",
+                "translatable": true
+            },
+            {
+                "name": "deep.deep.0.array.0",
+                "type": "string",
+                "translatable": true
+            }
+        ]
+    }
+}
