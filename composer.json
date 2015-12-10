@@ -11,7 +11,7 @@
     ],
     "autoload": {
         "psr-4": {
-            "Graviton\\TestserviceBundle\\": "src/"
+            "Graviton\\TestServicesBundle\\": "src/"
         }
     },
     "minimum-stability": "dev",

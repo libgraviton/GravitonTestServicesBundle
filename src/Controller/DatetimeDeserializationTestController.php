@@ -2,7 +2,7 @@
 /**
  * DatetimeDeserializationTestController class file
  */
-namespace Graviton\TestServiceBundle\Controller;
+namespace Graviton\TestServicesBundle\Controller;
 
 use Graviton\RestBundle\Controller\RestController;
 use Symfony\Component\HttpFoundation\Request;
