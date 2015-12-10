@@ -1,0 +1,20 @@
+{
+  "id": "TestCaseDatetimeDeserialization",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/datetime-deserialization/",
+    "baseController": "\\Graviton\\TestServiceBundle\\Controller\\DatetimeDeserializationTestController"
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "datetime",
+        "type": "datetime"
+      },
+      {
+        "name": "datetimes.0",
+        "type": "datetime"
+      }
+    ]
+  }
+}

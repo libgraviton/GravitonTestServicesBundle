@@ -9,6 +9,11 @@
             "email": "lucas.bickel@swisscom.com"
         }
     ],
+    "autoload": {
+        "psr-4": {
+            "Graviton\\TestserviceBundle\\": "src/"
+        }
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
