@@ -43,7 +43,7 @@
             },
             {
                 "name": "customerNumber",
-                "type": "integer",
+                "type": "int",
                 "description": "Third party identification number",
                 "title": "Customer number",
                 "required": true
