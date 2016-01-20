@@ -9,20 +9,24 @@
         "fixtures": [
             {
                 "id": "100",
+                "customerNumber": "1100",
                 "name": "Acme Corps.",
                 "recordOrigin": "core"
             },
             {
                 "id": "101",
+                "customerNumber": "1101",
                 "name": "Widgets4U gmbh",
                 "recordOrigin": "otherCore"
             },
             {
                 "id": "102",
+                "customerNumber": "1102",
                 "name": "Smith Family"
             },
             {
                 "id": "103",
+                "customerNumber": "1103",
                 "name": "John Doe"
             }
         ]
@@ -36,6 +40,13 @@
                 "type": "string",
                 "description": "unique identifier",
                 "title": "ID"
+            },
+            {
+                "name": "customerNumber",
+                "type": "integer",
+                "description": "Third party identification number",
+                "title": "Customer number",
+                "required": true
             },
             {
                 "name": "name",
