@@ -1,0 +1,26 @@
+{
+  "id": "TestCaseTranslatableRequiredSetting",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/translatable-required/"
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "optional",
+        "type": "string",
+        "translatable": true
+      },
+      {
+        "name": "required",
+        "type": "string",
+        "translatable": true,
+        "required": true
+      }
+    ]
+  }
+}

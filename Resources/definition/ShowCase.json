@@ -109,6 +109,7 @@
                     {
                         "id": "1234",
                         "name": "Hans",
+                        "customerNumber": "1234",
                         "$ref": "http://localhost/core/app/admin"
                     }
                 ]
