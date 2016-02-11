@@ -298,6 +298,21 @@
                 "type": "class:GravitonDyn\\CustomerBundle\\Document\\Customer[]",
                 "title": "customers",
                 "description": "nested list of customers"
+            },
+            {
+                "name": "choices",
+                "type": "string",
+                "title": "Choices",
+                "required": true,
+                "description": "A field containing an ENum values restricted by constraints",
+                "constraints": [
+                    {
+                        "name": "Choice",
+                        "options": [
+                            {"name": "choices", "value": "<|>|=|>=|<=|<>"}
+                        ]
+                    }
+                ]
             }
         ]
     }
