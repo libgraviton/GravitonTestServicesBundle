@@ -1,0 +1,53 @@
+{
+  "id": "TestCaseSchemaConstraints",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/schema-constraints/"
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "choiceString",
+        "type": "string",
+        "title": "Choices String",
+        "description": "A field containing choices between strings",
+        "constraints": [
+          {
+            "name": "Choice",
+            "options": [
+              {"name": "choices", "value": "si|no|a lo mejor|mas"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "choiceInteger",
+        "type": "int",
+        "title": "Choices",
+        "description": "A field containing choices between some integers",
+        "constraints": [
+          {
+            "name": "Choice",
+            "options": [
+              {"name": "choices", "value": "0|1|2"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "email",
+        "type": "varchar",
+        "title": "email",
+        "description": "A field containing a email Constraint",
+        "constraints": [
+          {
+            "name": "Email",
+            "options": [
+              {"name": "strict", "value": "true"}
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
