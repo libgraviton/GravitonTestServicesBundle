@@ -9,8 +9,6 @@
       {
         "name": "choiceString",
         "type": "string",
-        "title": "Choices String",
-        "description": "A field containing choices between strings",
         "constraints": [
           {
             "name": "Choice",
@@ -23,8 +21,6 @@
       {
         "name": "choiceInteger",
         "type": "int",
-        "title": "Choices",
-        "description": "A field containing choices between some integers",
         "constraints": [
           {
             "name": "Choice",
@@ -37,13 +33,158 @@
       {
         "name": "email",
         "type": "varchar",
-        "title": "email",
-        "description": "A field containing a email Constraint",
         "constraints": [
           {
             "name": "Email",
             "options": [
               {"name": "strict", "value": "true"}
+            ]
+          }
+        ]
+      },
+      {
+        "name": "url",
+        "type": "varchar",
+        "constraints": [
+          {
+            "name": "Url",
+            "options": [{"name": "message", "value":"The url '{{ value }}' is not a valid url"}]
+          }
+        ]
+      },
+      {
+        "name": "rangeInteger",
+        "type": "int",
+        "constraints": [
+          {
+            "name": "Range",
+            "options": [
+              {
+                "name": "min",
+                "value": "5"
+              },
+              {
+                "name": "max",
+                "value": "9"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "rangeDouble",
+        "type": "double",
+        "constraints": [
+          {
+            "name": "Range",
+            "options": [
+              {
+                "name": "min",
+                "value": "0.0"
+              },
+              {
+                "name": "max",
+                "value": "1.0"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "rangeIntegerOnlyMin",
+        "type": "int",
+        "constraints": [
+          {
+            "name": "Range",
+            "options": [
+              {
+                "name": "min",
+                "value": "5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "rangeIntegerOnlyMax",
+        "type": "int",
+        "constraints": [
+          {
+            "name": "Range",
+            "options": [
+              {
+                "name": "max",
+                "value": "5"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "greaterThanOrEqualInt",
+        "type": "int",
+        "constraints": [
+          {
+            "name": "GreaterThanOrEqual",
+            "options": [{"name": "value", "value":"0"}]
+          }
+        ]
+      },
+      {
+        "name": "greaterThanOrEqualDouble",
+        "type": "double",
+        "constraints": [
+          {
+            "name": "GreaterThanOrEqual",
+            "options": [{"name": "value", "value":"0.1"}]
+          }
+        ]
+      },
+      {
+        "name": "lessThanOrEqualInt",
+        "type": "int",
+        "constraints": [
+          {
+            "name": "LessThanOrEqual",
+            "options": [{"name": "value", "value":"0"}]
+          }
+        ]
+      },
+      {
+        "name": "lessThanOrEqualDouble",
+        "type": "double",
+        "constraints": [
+          {
+            "name": "LessThanOrEqual",
+            "options": [{"name": "value", "value":"0.1"}]
+          }
+        ]
+      },
+      {
+        "name": "decimalField",
+        "type": "string",
+        "constraints": [
+          {
+            "name": "Decimal",
+            "options": []
+          }
+        ]
+      },
+      {
+        "name": "arrayCount.0",
+        "type": "string",
+        "constraints": [
+          {
+            "name": "Count",
+            "options": [
+              {
+                "name": "min",
+                "value": "1"
+              },
+              {
+                "name": "max",
+                "value": "3"
+              }
             ]
           }
         ]
