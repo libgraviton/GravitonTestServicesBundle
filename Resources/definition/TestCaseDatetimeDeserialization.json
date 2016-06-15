@@ -2,8 +2,7 @@
   "id": "TestCaseDatetimeDeserialization",
   "service": {
     "readOnly": false,
-    "routerBase": "/testcase/datetime-deserialization/",
-    "baseController": "\\Graviton\\TestServicesBundle\\Controller\\DatetimeDeserializationTestController"
+    "routerBase": "/testcase/datetime-deserialization/"
   },
   "target": {
     "fields": [
