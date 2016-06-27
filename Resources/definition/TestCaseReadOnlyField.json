@@ -1,0 +1,58 @@
+{
+  "id": "TestCaseReadOnlyField",
+  "description": "Simple service for test cases",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/readonlyfield/",
+    "fixtures": [
+      {
+        "id": "101",
+        "allowed": "this is allowed",
+        "denied": "this is a denied field",
+        "deniedArray": [
+          "this is denied",
+          "this also"
+        ],
+        "deniedObject": {
+          "denied": "this is denied",
+          "allowed": "this is allowed"
+        }
+      }
+    ]
+  },
+  "target": {
+    "indexes": [],
+    "relations": [],
+    "fields": [
+      {
+        "name": "id",
+        "type": "string",
+        "description": "unique identifier",
+        "title": "ID"
+      },
+      {
+        "name": "allowed",
+        "type": "varchar"
+      },
+      {
+        "name": "denied",
+        "type": "varchar",
+        "readOnly": true
+      },
+      {
+        "name": "deniedArray.0",
+        "type": "varchar",
+        "readOnly": true
+      },
+      {
+        "name": "deniedObject.denied",
+        "type": "varchar",
+        "readOnly": true
+      },
+      {
+        "name": "deniedObject.allowed",
+        "type": "varchar"
+      }
+    ]
+  }
+}
