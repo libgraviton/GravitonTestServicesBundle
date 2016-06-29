@@ -1,0 +1,29 @@
+{
+  "id": "TestCaseSchemaInvalidation",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/schema-cache-invalidation/"
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "name",
+        "type": "varchar",
+        "title": "Name",
+        "description": "Name",
+        "translatable": true
+      },
+      {
+        "name": "apps",
+        "type": "class:Graviton\\CoreBundle\\Document\\App[]",
+        "title": "Apps",
+        "description": "Apps",
+        "x-dynamic-key": {
+          "document-id": "GravitonCoreBundle:App",
+          "repository-method": "findAll",
+          "ref-field": "name"
+        }
+      }
+    ]
+  }
+}
