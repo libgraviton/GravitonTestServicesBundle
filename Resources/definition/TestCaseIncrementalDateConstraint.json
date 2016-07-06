@@ -1,0 +1,32 @@
+{
+  "id": "TestCaseIncrementalDateConstraint",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/incremental-date-constraint/",
+    "fixtures": [
+      {
+        "id": "entry",
+        "mightyDate": "1984-05-02T09:00:00+0200"
+      }
+    ]
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "mightyDate",
+        "type": "datetime",
+        "title": "An important date",
+        "description": "Don't forget to save the date",
+        "constraints": [
+          {
+            "name": "incrementalDate"
+          }
+        ]
+      }
+    ]
+  }
+}
