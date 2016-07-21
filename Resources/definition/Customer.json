@@ -11,6 +11,9 @@
                 "id": "100",
                 "customerNumber": "1100",
                 "name": "Acme Corps.",
+                "someObject": {
+                    "oneField": "value"
+                },
                 "recordOrigin": "core"
             },
             {
@@ -62,6 +65,26 @@
                 "title": "Link",
                 "exposeAs": "$ref",
                 "collection": ["*"]
+            },
+            {
+                "name": "addedField",
+                "type": "object",
+                "description": "An optional additional data field",
+                "title": "Added field",
+                "recordOriginException": true
+            },
+            {
+                "name": "someObject.oneField",
+                "type": "varchar",
+                "description": "A field you cannot write to",
+                "title": "One Field"
+            },
+            {
+                "name": "someObject.twoField",
+                "type": "varchar",
+                "description": "A field you can write to",
+                "title": "Two Field",
+                "recordOriginException": true
             }
         ]
     }
