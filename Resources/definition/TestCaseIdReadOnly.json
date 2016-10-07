@@ -1,0 +1,41 @@
+{
+  "id": "TestCaseIdReadOnly",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/readonlyid/",
+    "fixtures": []
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "name",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "object.id",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "object.name",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "object.object.id",
+        "type": "string",
+        "required": true
+      },
+      {
+        "name": "object.object.name",
+        "type": "string",
+        "required": true
+      }
+    ]
+  }
+}
