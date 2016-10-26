@@ -1,0 +1,117 @@
+{
+  "id": "TestCaseDeepEqualNaming",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/deep-naming/",
+    "fixtures": [
+      {
+        "id": "testdata1",
+        "level": [
+          {
+            "levela": [
+              {
+                "levela1": [
+                  {
+                    "levela2": "testdata1 A2 reached"
+                  }
+                ]
+              }
+            ],
+            "levelb": [
+              {
+                "levelb1": [
+                  {
+                    "levelb2": "testdata1 B2 reached"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "testdata2",
+        "level": [
+          {
+            "levela": [
+              {
+                "levela1": [
+                  {
+                    "levela2": null
+                  }
+                ]
+              }
+            ],
+            "levelb": [
+              {
+                "levelb1": [
+                  {
+                    "levelb2": " testdata2 2 reached"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },{
+        "id": "testdata3",
+        "level": [
+          {
+            "levela": [
+              {
+                "levela1": []
+              }
+            ],
+            "levelb": [
+              {
+                "levelb1": [
+                  {
+                    "levelb2": "testdata3 B2  reached"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },{
+        "id": "testdata4",
+        "level": [
+          {
+            "levela": [
+              {
+                "levela1": [
+                  {
+                    "levela2": "testdata4 A2 reached"
+                  }
+                ]
+              }
+            ],
+            "levelb": [
+              {
+                "levelb1": []
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "level.0.levela.0.levela1.0.levela2",
+        "type": "varchar",
+        "required": false
+      },
+      {
+        "name": "level.0.levelb.0.levelb1.0.levelb2",
+        "type": "varchar",
+        "required": false
+      }
+    ]
+  }
+}
