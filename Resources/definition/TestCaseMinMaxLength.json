@@ -1,0 +1,32 @@
+{
+  "id": "TestCaseMinMaxLength",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/minmaxlength/"
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "minMaxField",
+        "type": "string",
+        "minLength": 5,
+        "maxLength": 10
+      },
+      {
+        "name": "maxRequiredField",
+        "type": "string",
+        "required": true,
+        "maxLength": 2
+      },
+      {
+        "name": "minLength",
+        "type": "string",
+        "minLength": 1
+      }
+    ]
+  }
+}
