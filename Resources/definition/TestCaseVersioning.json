@@ -1,5 +1,5 @@
 {
-  "id": "TestCaseVersioningVersioningEntity",
+  "id": "TestCaseVersioningEntity",
   "service": {
     "readOnly": false,
     "versioning": true,
