@@ -1,18 +1,17 @@
 {
-  "id": "VersioningEntity",
+  "id": "TestCaseVersioningVersioningEntity",
   "service": {
     "readOnly": false,
+    "versioning": true,
     "routerBase": "/testcase/versioning-entity/",
     "fixtures": [
       {
         "id": "one",
-        "data": "one",
-        "version": 1
+        "data": "one"
       },
       {
         "id": "two",
-        "data": "two",
-        "version": 2
+        "data": "two"
       }
     ]
   },
@@ -25,15 +24,6 @@
       {
         "name": "data",
         "type": "string"
-      },
-      {
-        "name": "version",
-        "type": "int",
-        "constraints": [
-          {
-            "name": "versioning"
-          }
-        ]
       }
     ]
   }
