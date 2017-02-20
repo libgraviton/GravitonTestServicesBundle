@@ -7,11 +7,13 @@
     "fixtures": [
       {
         "id": "one",
-        "data": "one"
+        "data": "one",
+        "version": 1
       },
       {
         "id": "two",
-        "data": "two"
+        "data": "two",
+        "version": 2
       }
     ]
   },
