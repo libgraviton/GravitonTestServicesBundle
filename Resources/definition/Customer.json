@@ -14,7 +14,8 @@
                 "someObject": {
                     "oneField": "value"
                 },
-                "recordOrigin": "core"
+                "recordOrigin": "core",
+                "createDate": "2014-07-15T10:23:31+0000"
             },
             {
                 "id": "101",
@@ -85,6 +86,15 @@
                 "description": "A field you can write to",
                 "title": "Two Field",
                 "recordOriginException": true
+            },
+            {
+                "name": "createDate",
+                "type": "DATETIME",
+                "length": 0,
+                "required": false,
+                "translatable": false,
+                "recordOriginException": false,
+                "searchable": 0
             }
         ]
     }
