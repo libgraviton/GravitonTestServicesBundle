@@ -1,0 +1,41 @@
+{
+  "id": "TestCaseXDynamicKeyEntry",
+  "title": "Entry",
+  "description": "Some entry",
+  "service": {
+    "readOnly": false,
+    "fixtures": []
+  },
+  "target": {
+    "indexes": [],
+    "relations": [
+      {
+        "type": "ref",
+        "localProperty": "app"
+      }
+    ],
+    "fields": [
+      {
+        "name": "app.ref",
+        "type": "extref",
+        "title": "App",
+        "description": "Link to relevant app",
+        "exposeAs": "$ref",
+        "required": true,
+        "collection": ["*"]
+      },
+      {
+        "name": "name",
+        "type": "varchar",
+        "title": "Name",
+        "description": "Some name"
+      },
+      {
+        "name": "isGreat",
+        "type": "boolean",
+        "title": "is great",
+        "description": "If this is great or not"
+      }
+    ]
+  }
+}
