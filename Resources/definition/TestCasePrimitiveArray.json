@@ -161,6 +161,10 @@
             {
                 "name": "arrayhash.0.hasharray.0",
                 "type": "object"
+            },
+            {
+                "name": "rawData",
+                "type": "object"
             }
         ]
     }
