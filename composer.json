@@ -2,11 +2,11 @@
     "name": "graviton/test-services-bundle",
     "description": "Graviton service bundle containing some service definitions useful for testing.",
     "type": "library",
-    "license": "GPL",
+    "license": "MIT",
     "authors": [
         {
-            "name": "Lucas Bickel",
-            "email": "lucas.bickel@swisscom.com"
+            "name": "List of contributors",
+            "homepage": "https://github.com/libgraviton/GravitonTestServicesBundle/graphs/contributors"
         }
     ],
     "autoload": {
