@@ -3,20 +3,19 @@
   "target": {
     "fields": [
       {
-        "name": "id",
-        "type": "string"
-      },
-      {
         "name": "type",
-        "type": "string"
+        "type": "string",
+        "required": true
       },
       {
         "name": "protocol",
-        "type": "string"
+        "type": "string",
+        "required": true
       },
       {
         "name": "value",
-        "type": "string"
+        "type": "string",
+        "required": true
       },
       {
         "name": "uri",
