@@ -1,8 +1,20 @@
 {
   "collection": "Customer",
-  "route": "customer-created-by-date",
+  "route": "customer-date-with-param",
+  "params": [
+    {
+      "name": "yearFrom",
+      "required": true,
+      "type": "integer"
+    },
+    {
+      "name": "yearTo",
+      "required": true,
+      "type": "integer"
+    }
+  ],
   "type": "array",
-  "cacheTime": 120,
+  "cacheTime": 0,
   "aggregate": [
     {
       "$project": {
@@ -42,8 +54,8 @@
     {
       "$match": {
         "created_year": {
-          "$gte": 2013,
-          "$lt": 2015
+          "$gte": "${yearFrom}",
+          "$lte": "${yearTo}"
         }
       }
     }
