@@ -1,0 +1,43 @@
+{
+  "collection": "Customer",
+  "route": "customer-with-int-param-array-field",
+  "params": [
+    {
+      "name": "groupId",
+      "required": true,
+      "type": "array"
+    }
+  ],
+  "type": "array",
+  "cacheTime": 0,
+  "aggregate": [
+    {
+      "$match": {
+        "groups": {"$in": "${groupId}"}
+      }
+    },
+    {
+      "$project": {
+        "_id": 1,
+        "name": 1
+      }
+    }
+  ],
+  "schema": {
+    "title": "Customer by group id",
+    "description": "Customer by group id",
+    "type": "object",
+    "properties": {
+      "_id": {
+        "title": "ID",
+        "description": "Unique identifier",
+        "type": "string"
+      },
+      "name": {
+        "title": "Name",
+        "description": "Customer name",
+        "type": "string"
+      }
+    }
+  }
+}
