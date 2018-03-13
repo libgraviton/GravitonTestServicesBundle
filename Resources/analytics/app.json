@@ -16,7 +16,6 @@
     "title": "Application usage",
     "description": "Data use for application access",
     "type": "object",
-    "representation": "pie",
     "properties": {
       "id": {
         "title": "ID",

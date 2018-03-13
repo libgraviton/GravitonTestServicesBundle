@@ -64,7 +64,6 @@
     "title": "Customer by date range",
     "description": "List customers by date range ",
     "type": "object",
-    "representation": "pie",
     "properties": {
       "_id": {
         "title": "ID",

@@ -23,7 +23,6 @@
     "title": "Application usage Above 2",
     "description": "Data use for application access with order gte 2",
     "type": "object",
-    "representation": "pie",
     "properties": {
       "id": {
         "title": "ID",

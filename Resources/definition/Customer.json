@@ -15,23 +15,30 @@
                     "oneField": "value"
                 },
                 "recordOrigin": "core",
+                "groups": ["100", "200"],
                 "createDate": "2014-07-15T10:23:31+0000"
             },
             {
                 "id": "101",
                 "customerNumber": "1101",
                 "name": "Widgets4U gmbh",
-                "recordOrigin": "otherCore"
+                "recordOrigin": "otherCore",
+                "groups": ["100", "200"],
+                "createDate": "2015-07-15T10:23:31+0000"
             },
             {
                 "id": "102",
                 "customerNumber": "1102",
-                "name": "Smith Family"
+                "name": "Smith Family",
+                "groups": ["100"],
+                "createDate": "2016-07-15T10:23:31+0000"
             },
             {
                 "id": "103",
                 "customerNumber": "1103",
-                "name": "John Doe"
+                "name": "John Doe",
+                "groups": ["200"],
+                "createDate": "2017-07-15T10:23:31+0000"
             }
         ]
     },
@@ -58,6 +65,12 @@
                 "description": "Customer Name",
                 "title": "Name",
                 "required": true
+            },
+            {
+                "name": "groups",
+                "type": "varchar[]",
+                "description": "List of groups",
+                "title": "Groups"
             },
             {
                 "name": "ref",
