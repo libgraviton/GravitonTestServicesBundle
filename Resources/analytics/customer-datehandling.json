@@ -1,0 +1,28 @@
+{
+  "collection": "Customer",
+  "route": "customer-datehandling",
+  "type": "array",
+  "cacheTime": 0,
+  "schema": {
+    "title": "Customer with age",
+    "description": "Customer with age",
+    "type": "object",
+    "properties": {
+      "_id": {
+        "title": "ID",
+        "description": "Unique identifier",
+        "type": "string"
+      },
+      "age": {
+        "title": "Age",
+        "description": "age",
+        "type": "integer"
+      },
+      "createDate": {
+        "title": "Create date",
+        "description": "Create date",
+        "type": "datetime"
+      }
+    }
+  }
+}

@@ -1,0 +1,28 @@
+[
+  {
+    "$addFields": {
+      "age": {
+        "$subtract": [
+          {
+            "$year": "#newDate#"
+          },
+          {
+            "$year": "$createDate"
+          }
+        ]
+      }
+    }
+  },
+  {
+    "$project": {
+      "age": 1,
+      "createDate": 1,
+      "sub.createDate": "$createDate"
+    }
+  },
+  {
+    "$sort": {
+      "_id": 1
+    }
+  }
+]
