@@ -4,8 +4,8 @@
   "params": [
     {
       "name": "groupId",
-      "required": true,
-      "type": "string"
+      "type": "string",
+      "default": "100"
     }
   ],
   "type": "array",
