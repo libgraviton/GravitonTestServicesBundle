@@ -1,0 +1,32 @@
+{
+  "collection": {
+    "customer": "Customer",
+    "apps": "App"
+  },
+  "route": "multipipeline",
+  "processor": "Graviton\\AnalyticsBundle\\Tests\\AnalyticsTestProcessor",
+  "type": "array",
+  "cacheTime": 0,
+  "schema": {
+    "title": "List of things",
+    "description": "Lists things.",
+    "type": "object",
+    "properties": {
+      "_id": {
+        "title": "ID",
+        "description": "Unique identifier",
+        "type": "string"
+      },
+      "name": {
+        "title": "Name",
+        "description": "Name",
+        "type": "string"
+      },
+      "name": {
+        "title": "Name",
+        "description": "Customer name",
+        "type": "string"
+      }
+    }
+  }
+}
