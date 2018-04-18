@@ -1,0 +1,10 @@
+[
+  {
+    "$project": {
+      "_id": 1,
+      "name": "$name",
+      "sorter": {"$strLenBytes": "$name"},
+      "dater": "#newDate#"
+    }
+  }
+]
