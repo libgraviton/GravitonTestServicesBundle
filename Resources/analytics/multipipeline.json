@@ -3,6 +3,21 @@
     "customer": "Customer",
     "apps": "App"
   },
+  "params": [
+    {
+      "name": "search",
+      "required": false,
+      "type": "string",
+      "removeOnAbstinence": {
+        "apps": [
+          "/0"
+        ],
+        "customer": [
+          "/0"
+        ]
+      }
+    }
+  ],
   "route": "multipipeline",
   "processor": "Graviton\\AnalyticsBundle\\Tests\\AnalyticsTestProcessor",
   "type": "array",
