@@ -1,6 +1,16 @@
 {
   "collection": "Customer",
   "route": "customer-datehandling",
+  "params": [
+    {
+      "name": "dateFrom",
+      "required": false,
+      "type": "date",
+      "removeOnAbstinence": [
+        "/0"
+      ]
+    }
+  ],
   "type": "array",
   "cacheTime": 0,
   "schema": {
