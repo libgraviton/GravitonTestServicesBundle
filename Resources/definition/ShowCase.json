@@ -113,7 +113,8 @@
                         "$ref": "http://localhost/core/app/admin"
                     }
                 ],
-                "choices": ">="
+                "choices": ">=",
+                "hiddenField": "hidden string"
             },
             {
                 "id": "600",
@@ -165,7 +166,8 @@
                     "dateField": "2012-12-24T14:15:55Z",
                     "someFloatyDouble": 458.114
                 },
-                "choices": "<>"
+                "choices": "<>",
+                "hiddenField": "hidden string2"
             }
         ]
     },
@@ -315,6 +317,13 @@
                         ]
                     }
                 ]
+            },
+            {
+                "name": "hiddenField",
+                "type": "varchar",
+                "title": "Hidden Field",
+                "description": "A field that is never serialized",
+                "hidden": true
             }
         ]
     }
