@@ -1,0 +1,104 @@
+{
+  "id": "TestCaseRestrictedFields",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/restricted-fields/",
+    "fixtures": [
+      {
+        "id": "100",
+        "restrictedField": "anonymous",
+        "anotherField": "another100",
+        "subObj": {
+          "restrictedField": "anonymous",
+          "anotherField": "anotherObj100"
+        },
+        "arrField": [
+          {
+            "restrictedField": "anonymous",
+            "anotherField": "anotherArr0100"
+          }
+        ]
+      },
+      {
+        "id": "200",
+        "restrictedField": "hans",
+        "anotherField": "another100",
+        "subObj": {
+          "restrictedField": "hans",
+          "anotherField": "anotherObj100"
+        },
+        "arrField": [
+          {
+            "restrictedField": "hans",
+            "anotherField": "anotherArr0100"
+          }
+        ]
+      },
+      {
+        "id": "300",
+        "restrictedField": "anonymous",
+        "anotherField": "another100",
+        "subObj": {
+          "restrictedField": "anonymouzz",
+          "anotherField": "anotherObj100"
+        },
+        "arrField": [
+          {
+            "restrictedField": "anonymous",
+            "anotherField": "anotherArr0100"
+          }
+        ]
+      },
+      {
+        "id": "400",
+        "restrictedField": "anonymous",
+        "anotherField": "another100",
+        "subObj": {
+          "restrictedField": "anonymous",
+          "anotherField": "anotherObj100"
+        },
+        "arrField": [
+          {
+            "restrictedField": "anonymouz",
+            "anotherField": "anotherArr0100"
+          }
+        ]
+      }
+    ]
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "restrictedField",
+        "type": "string",
+        "restrictions": ["whoami"]
+      },
+      {
+        "name": "anotherField",
+        "type": "string"
+      },
+      {
+        "name": "subObj.restrictedField",
+        "type": "string",
+        "restrictions": ["whoami"]
+      },
+      {
+        "name": "subObj.anotherField",
+        "type": "string"
+      },
+      {
+        "name": "arrField.0.restrictedField",
+        "type": "string",
+        "restrictions": ["whoami"]
+      },
+      {
+        "name": "arrField.0.anotherField",
+        "type": "string"
+      }
+    ]
+  }
+}
