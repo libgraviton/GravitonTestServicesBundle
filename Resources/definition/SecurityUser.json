@@ -1,0 +1,60 @@
+{
+    "id": "SecurityUser",
+    "description": "Security users",
+    "service": {
+        "fixtureOrder": 45,
+        "readOnly": false,
+        "recordOriginModifiable": false,
+        "routerBase": "/person/securityuser/",
+        "fixtures": [
+            {
+                "id": "100",
+                "username": "hans",
+                "name": "Hans Hofer",
+                "street": "Randweg 33"
+            },
+            {
+                "id": "200",
+                "username": "fred",
+                "name": "Fred Feuz",
+                "street": "Kirchweg 33"
+            },
+            {
+                "id": "300",
+                "username": "manfred",
+                "name": "Manfred Büttikofer",
+                "street": "Übergang 3"
+            }
+        ]
+    },
+    "target": {
+        "indexes": [],
+        "relations": [],
+        "fields": [
+            {
+                "name": "id",
+                "type": "string",
+                "description": "unique identifier",
+                "title": "ID"
+            },
+            {
+                "name": "username",
+                "type": "string",
+                "description": "Username",
+                "title": "Username"
+            },
+            {
+                "name": "name",
+                "type": "string",
+                "description": "Name",
+                "title": "Full name"
+            },
+            {
+                "name": "street",
+                "type": "string",
+                "description": "Street",
+                "title": "Street"
+            }
+        ]
+    }
+}
