@@ -35,6 +35,21 @@
         ]
       },
       {
+        "id": "250",
+        "restrictedField": "hans",
+        "anotherField": "another100",
+        "subObj": {
+          "restrictedField": "hans",
+          "anotherField": "anotherObj100"
+        },
+        "arrField": [
+          {
+            "restrictedField": "hanz",
+            "anotherField": "anotherArr0100"
+          }
+        ]
+      },
+      {
         "id": "300",
         "restrictedField": "anonymous",
         "anotherField": "another100",
@@ -75,7 +90,8 @@
       {
         "name": "restrictedField",
         "type": "string",
-        "restrictions": ["whoami"]
+        "restrictions": ["whoami"],
+        "hidden": true
       },
       {
         "name": "anotherField",
