@@ -11,7 +11,7 @@
     {
       "name": "search",
       "required": false,
-      "type": "string"
+      "type": "regex"
     }
   ],
   "route": "multipipeline",
