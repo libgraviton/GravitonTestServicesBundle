@@ -14,6 +14,10 @@
             "Graviton\\TestServicesBundle\\": "src/"
         }
     },
+    "require-dev": {
+        "graviton/analytics-mongoshell-converter": "dev-feature/lexerize",
+        "graviton/analytics-base": "*"
+    },
     "minimum-stability": "dev",
     "prefer-stable": true
 }
