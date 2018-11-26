@@ -1,6 +1,7 @@
 {
   "collection": "Customer",
   "route": "customer-with-int-param-string-field",
+  "class": "Graviton\\TestServicesBundle\\Pipeline\\Customerwithintparamstringfield",
   "params": [
     {
       "name": "groupId",
@@ -10,19 +11,6 @@
   ],
   "type": "array",
   "cacheTime": 0,
-  "aggregate": [
-    {
-      "$match": {
-        "groups": "${groupId}"
-      }
-    },
-    {
-      "$project": {
-        "_id": 1,
-        "name": 1
-      }
-    }
-  ],
   "schema": {
     "title": "Customer by group id",
     "description": "Customer by group id",
