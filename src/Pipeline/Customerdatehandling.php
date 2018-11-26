@@ -30,7 +30,7 @@ final class Customerdatehandling extends \Graviton\AnalyticsBase\Pipeline\Pipeli
 		              [
 		              '$year'
 		              =>
-		              new \MongoDate()
+		              new \MongoDB\BSON\UTCDateTime()
 		            ]
 		            ,
 		              [
