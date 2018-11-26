@@ -3,19 +3,15 @@
     "customer": "Customer",
     "apps": "App"
   },
+  "class": {
+    "customer": "Graviton\\TestServicesBundle\\Pipeline\\MultipipelineCustomer",
+    "apps": "Graviton\\TestServicesBundle\\Pipeline\\MultipipelineApps"
+  },
   "params": [
     {
       "name": "search",
       "required": false,
-      "type": "string",
-      "removeOnAbstinence": {
-        "apps": [
-          "/0"
-        ],
-        "customer": [
-          "/0"
-        ]
-      }
+      "type": "string"
     }
   ],
   "route": "multipipeline",

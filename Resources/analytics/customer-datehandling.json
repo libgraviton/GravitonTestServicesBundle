@@ -1,14 +1,12 @@
 {
   "collection": "Customer",
   "route": "customer-datehandling",
+  "class": "Graviton\\TestServicesBundle\\Pipeline\\Customerdatehandling",
   "params": [
     {
       "name": "dateFrom",
       "required": false,
-      "type": "date",
-      "removeOnAbstinence": [
-        "/0"
-      ]
+      "type": "date"
     }
   ],
   "type": "array",

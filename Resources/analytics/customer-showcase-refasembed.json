@@ -1,21 +1,8 @@
 {
   "collection": "ShowCase",
   "route": "customer-showcase-refasembed",
+  "class": "Graviton\\TestServicesBundle\\Pipeline\\Customershowcaserefasembed",
   "type": "array",
   "cacheTime": 0,
-  "aggregate": [
-    {
-      "$project": {
-        "_id": 1,
-        "contact": 1,
-        "contacts": 1
-      }
-    },
-    {
-      "$sort": {
-        "_id": 1
-      }
-    }
-  ],
   "schema": {}
 }
