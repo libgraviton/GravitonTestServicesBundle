@@ -1,6 +1,37 @@
 {
     "id": "Customer",
     "description": "Simple Customer Service",
+    "solr": {
+        "aggregate": [
+            {
+                "$match": {
+                    "id": 3
+                }
+            },
+            {
+                "$project": {
+                    "field1": 1
+                }
+            }
+        ],
+        "fields": [
+            {
+                "name": "field1",
+                "type": "text_general",
+                "weight": 1
+            },
+            {
+                "name": "field2",
+                "type": "text_general",
+                "weight": 2
+            },
+            {
+                "name": "field3",
+                "type": "text_general",
+                "weight": 15
+            }
+        ]
+    },
     "service": {
         "fixtureOrder": 45,
         "readOnly": false,
