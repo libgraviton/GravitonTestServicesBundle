@@ -1,0 +1,71 @@
+{
+    "id": "TestCaseMultiTenant",
+    "service": {
+        "readOnly": false,
+        "routerBase": "/testcase/multitenant/",
+        "fixtures": [
+            {
+                "id": "100",
+                "name": "test100",
+                "value": 100,
+                "clientId": 5
+            },
+            {
+                "id": "101",
+                "name": "test101",
+                "value": 101,
+                "clientId": 5
+            },
+            {
+                "id": "200",
+                "name": "test200",
+                "value": 200,
+                "clientId": 10
+            },
+            {
+                "id": "201",
+                "name": "test201",
+                "value": 201,
+                "clientId": 10
+            },
+            {
+                "id": "201",
+                "name": "test201",
+                "value": 201,
+                "clientId": 10
+            },
+            {
+                "id": "1000",
+                "name": "test1000",
+                "value": 1000
+            },
+            {
+                "id": "1001",
+                "name": "test1001",
+                "value": 1001
+            }
+        ]
+    },
+
+    "target": {
+        "indexes": [
+            "clientId"
+        ],
+        "fields": [
+            {
+                "name": "id",
+                "type": "string"
+            },
+            {
+                "name": "name",
+                "type": "string",
+                "required": true
+            },
+            {
+                "name": "value",
+                "type": "int",
+                "required": true
+            }
+        ]
+    }
+}
