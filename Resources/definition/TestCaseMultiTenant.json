@@ -29,12 +29,6 @@
                 "clientId": 10
             },
             {
-                "id": "201",
-                "name": "test201",
-                "value": 201,
-                "clientId": 10
-            },
-            {
                 "id": "1000",
                 "name": "test1000",
                 "value": 1000
