@@ -74,9 +74,11 @@ final class Customerdatehandling extends \Graviton\AnalyticsBase\Pipeline\Pipeli
 	}
 
 
-	public function getConditional00001()
+	public function getConditional00001($isNegated = false)
 	{
-		if (!$this->hasParam("dateFrom")) {
+		if (($isNegated === false && !$this->hasParam(["dateFrom"], "and")) ||
+						    ($isNegated === true && $this->hasParam(["dateFrom"], "and"))
+						) {
 							return self::EMPTY_STRING;
 						}
 

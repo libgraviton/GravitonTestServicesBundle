@@ -15,7 +15,7 @@
         }
     },
     "require-dev": {
-        "graviton/analytics-mongoshell-converter": "dev-feature/lexerize",
+        "graviton/analytics-mongoshell-converter": "*",
         "graviton/analytics-base": "*"
     },
     "minimum-stability": "dev",

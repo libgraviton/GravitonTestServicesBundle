@@ -42,9 +42,11 @@ final class MultipipelineCustomer extends \Graviton\AnalyticsBase\Pipeline\Pipel
 	}
 
 
-	public function getConditional00001()
+	public function getConditional00001($isNegated = false)
 	{
-		if (!$this->hasParam("search")) {
+		if (($isNegated === false && !$this->hasParam(["search"], "and")) ||
+						    ($isNegated === true && $this->hasParam(["search"], "and"))
+						) {
 							return self::EMPTY_STRING;
 						}
 
