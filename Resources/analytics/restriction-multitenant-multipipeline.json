@@ -1,0 +1,20 @@
+{
+  "collection": {
+    "first": "TestCaseMultiTenant",
+    "second": "TestCaseMultiTenant"
+  },
+  "class": {
+    "first": "Graviton\\TestServicesBundle\\Pipeline\\RestrictionmultitenantmultipipelineFirst",
+    "second": "Graviton\\TestServicesBundle\\Pipeline\\RestrictionmultitenantmultipipelineSecond"
+  },
+  "route": "restriction-multitenant-multipipeline",
+  "params": [
+    {
+      "name": "value",
+      "required": true,
+      "type": "integer"
+    }
+  ],
+  "type": "array",
+  "cacheTime": 0
+}
