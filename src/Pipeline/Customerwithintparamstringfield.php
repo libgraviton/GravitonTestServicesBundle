@@ -34,9 +34,11 @@ final class Customerwithintparamstringfield extends \Graviton\AnalyticsBase\Pipe
 	}
 
 
-	public function getConditional00001()
+	public function getConditional00001($isNegated = false)
 	{
-		if (!$this->hasParam("groupId")) {
+		if (($isNegated === false && !$this->hasParam(["groupId"], "and")) ||
+						    ($isNegated === true && $this->hasParam(["groupId"], "and"))
+						) {
 							return self::EMPTY_STRING;
 						}
 
