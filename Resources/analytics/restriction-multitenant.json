@@ -1,0 +1,14 @@
+{
+  "collection": "TestCaseMultiTenant",
+  "route": "restriction-multitenant",
+  "class": "Graviton\\TestServicesBundle\\Pipeline\\Restrictionmultitenant",
+  "params": [
+    {
+      "name": "value",
+      "required": true,
+      "type": "integer"
+    }
+  ],
+  "type": "array",
+  "cacheTime": 0
+}
