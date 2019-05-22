@@ -15,11 +15,11 @@
       },
       {
         "name": "apps",
-        "type": "class:Graviton\\CoreBundle\\Document\\App[]",
+        "type": "class:GravitonDyn\\AppBundle\\Document\\App[]",
         "title": "Apps",
         "description": "Apps",
         "x-dynamic-key": {
-          "document-id": "GravitonCoreBundle:App",
+          "document-id": "GravitonDynAppBundle:App",
           "repository-method": "findAll",
           "ref-field": "name"
         }
