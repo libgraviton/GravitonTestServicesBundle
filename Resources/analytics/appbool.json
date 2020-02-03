@@ -1,0 +1,19 @@
+{
+  "collection": "App",
+  "class": "Graviton\\TestServicesBundle\\Pipeline\\Appbool",
+  "route": "appbool",
+  "type": "array",
+  "params": [
+    {
+      "name": "showInMenu",
+      "type": "boolean",
+      "default": false,
+      "description": "boolean test"
+    }
+  ],
+  "schema": {
+    "title": "Boolea Test",
+    "description": "Boolean Test",
+    "type": "array"
+  }
+}
