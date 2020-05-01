@@ -1,0 +1,27 @@
+{
+  "id": "TestCaseRestListeners",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/rest-listeners/",
+    "listeners": {
+      "Graviton\\TestServicesBundle\\RestListener\\RestListener": ["prePersist"]
+    },
+    "fixtures": []
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "secondField",
+        "type": "string"
+      },
+      {
+        "name": "thirdField",
+        "type": "string"
+      }
+    ]
+  }
+}
