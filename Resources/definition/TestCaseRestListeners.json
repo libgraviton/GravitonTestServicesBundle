@@ -3,9 +3,26 @@
   "service": {
     "readOnly": false,
     "routerBase": "/testcase/rest-listeners/",
-    "listeners": {
-      "Graviton\\TestServicesBundle\\RestListener\\RestListener": ["prePersist"]
-    },
+    "listeners": [
+      {
+        "serviceName": "Graviton\\RestBundle\\RestListener\\ConditionalRestrictionPersisterListener",
+        "events": ["prePersist"],
+        "calls": [
+          {
+            "method": "setEntityName",
+            "arguments": [
+              "Hans"
+            ]
+          },
+          {
+            "method": "setFieldName",
+            "arguments": [
+              "hansId"
+            ]
+          }
+        ]
+      }
+    ],
     "fixtures": []
   },
   "target": {
