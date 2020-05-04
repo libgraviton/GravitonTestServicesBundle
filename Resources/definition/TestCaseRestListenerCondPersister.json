@@ -1,8 +1,8 @@
 {
-  "id": "TestCaseRestListeners",
+  "id": "TestCaseRestListenerCondPersister",
   "service": {
     "readOnly": false,
-    "routerBase": "/testcase/rest-listeners/",
+    "routerBase": "/testcase/rest-listeners-cond-persister/",
     "listeners": [
       {
         "serviceName": "Graviton\\RestBundle\\RestListener\\ConditionalRestrictionPersisterListener",
@@ -23,7 +23,23 @@
         ]
       }
     ],
-    "fixtures": []
+    "fixtures": [
+      {
+        "id": "1005",
+        "stringField": "hans",
+        "entityId": "1000"
+      },
+      {
+        "id": "1010",
+        "stringField": "fred",
+        "entityId": "2000"
+      },
+      {
+        "id": "1999",
+        "stringField": "franz",
+        "entityId": "3000"
+      }
+    ]
   },
   "target": {
     "fields": [
@@ -32,11 +48,11 @@
         "type": "string"
       },
       {
-        "name": "secondField",
+        "name": "stringField",
         "type": "string"
       },
       {
-        "name": "thirdField",
+        "name": "entityId",
         "type": "string"
       }
     ]

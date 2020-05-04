@@ -1,0 +1,31 @@
+{
+  "id": "TestCaseRestListenerCondPersisterEntity",
+  "service": {
+    "fixtures": [
+      {
+        "id": "1000",
+        "isRestricted": true
+      },
+      {
+        "id": "2000",
+        "isRestricted": false
+      },
+      {
+        "id": "3000",
+        "isRestricted": true
+      }
+    ]
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "isRestricted",
+        "type": "boolean"
+      }
+    ]
+  }
+}
