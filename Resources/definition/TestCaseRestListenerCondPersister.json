@@ -11,13 +11,25 @@
           {
             "method": "setEntityName",
             "arguments": [
-              "Hans"
+              "GravitonDyn\\TestCaseRestListenerCondPersisterEntityBundle\\Document\\TestCaseRestListenerCondPersisterEntity"
             ]
           },
           {
-            "method": "setFieldName",
+            "method": "setLocalField",
             "arguments": [
-              "hansId"
+              "entityId"
+            ]
+          },
+          {
+            "method": "setCompareField",
+            "arguments": [
+              "isRestricted"
+            ]
+          },
+          {
+            "method": "setCompareValue",
+            "arguments": [
+              true
             ]
           }
         ]
