@@ -1,0 +1,56 @@
+{
+  "id": "TestCaseRestListenerCondPersister",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/rest-listeners-cond-persister/",
+    "listeners": [
+      {
+        "serviceName": "Graviton\\RestBundle\\RestListener\\ConditionalRestrictionPersisterListener",
+        "events": ["prePersist"],
+        "calls": [
+          {
+            "method": "setEntityName",
+            "arguments": [
+              "GravitonDyn\\TestCaseRestListenerCondPersisterEntityBundle\\Document\\TestCaseRestListenerCondPersisterEntity"
+            ]
+          },
+          {
+            "method": "setLocalField",
+            "arguments": [
+              "entityId"
+            ]
+          },
+          {
+            "method": "setCompareField",
+            "arguments": [
+              "isRestricted"
+            ]
+          },
+          {
+            "method": "setCompareValue",
+            "arguments": [
+              true
+            ]
+          }
+        ]
+      }
+    ],
+    "fixtures": []
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "stringField",
+        "type": "string"
+      },
+      {
+        "name": "entityId",
+        "type": "string"
+      }
+    ]
+  }
+}
