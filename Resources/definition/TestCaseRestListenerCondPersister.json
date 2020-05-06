@@ -35,23 +35,7 @@
         ]
       }
     ],
-    "fixtures": [
-      {
-        "id": "1005",
-        "stringField": "hans",
-        "entityId": "1000"
-      },
-      {
-        "id": "1010",
-        "stringField": "fred",
-        "entityId": "2000"
-      },
-      {
-        "id": "1999",
-        "stringField": "franz",
-        "entityId": "3000"
-      }
-    ]
+    "fixtures": []
   },
   "target": {
     "fields": [
