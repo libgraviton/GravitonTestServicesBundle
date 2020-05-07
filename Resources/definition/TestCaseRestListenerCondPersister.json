@@ -50,6 +50,10 @@
       {
         "name": "entityId",
         "type": "string"
+      },
+      {
+        "name": "moreField",
+        "type": "int"
       }
     ]
   }
