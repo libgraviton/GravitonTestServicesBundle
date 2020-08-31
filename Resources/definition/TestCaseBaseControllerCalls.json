@@ -1,0 +1,20 @@
+{
+  "id": "TestCaseBaseControllerCalls",
+  "service": {
+    "readOnly": false,
+    "versioning": true,
+    "routerBase": "/testcase/basecontroller-calls/"
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "data",
+        "type": "string"
+      }
+    ]
+  }
+}
