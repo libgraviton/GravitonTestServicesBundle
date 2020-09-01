@@ -1,0 +1,43 @@
+{
+  "id": "TestCaseBaseControllerCalls",
+  "service": {
+    "readOnly": false,
+    "versioning": true,
+    "routerBase": "/testcase/basecontroller-calls/",
+    "baseController": "Graviton\\TestServicesBundle\\Controller\\TestcaseBaseControllerCallController",
+    "baseControllerCalls": [
+      {
+        "method": "setRandomService",
+        "arguments": [
+          "@graviton.testservicebundle.service.random"
+        ]
+      }
+    ],
+    "fixtures": [
+      {
+        "id": "one",
+        "data": "one"
+      },
+      {
+        "id": "two",
+        "data": "two"
+      }
+    ]
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "data",
+        "type": "string"
+      },
+      {
+        "name": "random",
+        "type": "string"
+      }
+    ]
+  }
+}
