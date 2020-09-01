@@ -48,7 +48,7 @@ class ShowcaseExtensionController extends RestController
 
         $response = $this->getResponse()
             ->setStatusCode(Response::HTTP_OK)
-            ->setContent($this->restUtils->serialize($data));
+            ->setContent($this->serialize($data));
 
         return $response;
     }
