@@ -1,0 +1,5 @@
+parameters:
+
+services:
+    graviton.testservicebundle.service.random:
+        class: Graviton\TestServicesBundle\Service\Random
