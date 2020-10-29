@@ -1,0 +1,45 @@
+{
+  "targetFile": "File.json",
+  "patch": [
+    {
+      "op": "add",
+      "path": "/service/listeners/-",
+      "value": {
+        "serviceName": "Graviton\\RestBundle\\RestListener\\ConditionalRestrictionPersisterListener",
+        "events": ["prePersist"],
+        "calls": [
+          {
+            "method": "setEntityName",
+            "arguments": [
+              "GravitonDyn\\TestCaseRestListenerCondPersisterEntityBundle\\Document\\TestCaseRestListenerCondPersisterEntity"
+            ]
+          },
+          {
+            "method": "setLocalField",
+            "arguments": [
+              "links"
+            ]
+          },
+          {
+            "method": "setLocalFieldArrayMatcherExpression",
+            "arguments": [
+              "entry['type'] in ['customer'] ? entry['ref'] : null"
+            ]
+          },
+          {
+            "method": "setCompareField",
+            "arguments": [
+              "isRestricted"
+            ]
+          },
+          {
+            "method": "setCompareValue",
+            "arguments": [
+              true
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}
