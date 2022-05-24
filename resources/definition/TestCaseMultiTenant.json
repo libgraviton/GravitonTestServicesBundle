@@ -59,6 +59,14 @@
                 "name": "value",
                 "type": "int",
                 "required": true
+            },
+            {
+                "name": "lastModifiedBy",
+                "type": "string"
+            },
+            {
+                "name": "lastModifiedAt",
+                "type": "datetime"
             }
         ]
     }
