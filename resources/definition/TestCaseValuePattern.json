@@ -1,0 +1,16 @@
+{
+  "id": "TestCaseValuePattern",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/value-pattern/"
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "theValue",
+        "type": "string",
+        "valuePattern": "^([0-9]+)(.*)hans$"
+      }
+    ]
+  }
+}
