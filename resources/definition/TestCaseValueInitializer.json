@@ -16,6 +16,34 @@
             ]
           }
         ]
+      },
+      {
+        "serviceName": "Graviton\\TestServicesBundle\\Service\\TypeDependentInitializer",
+        "events": ["prePersist"]
+      }
+    ],
+    "services": [
+      {
+        "serviceName": "Graviton\\TestServicesBundle\\Service\\TypeDependentInitializer",
+        "arguments": [
+          "type"
+        ],
+        "calls": [
+          {
+            "method": "addTypeLength",
+            "arguments": [
+              "test1",
+              30
+            ]
+          },
+          {
+            "method": "addTypeLength",
+            "arguments": [
+              "test2",
+              300
+            ]
+          }
+        ]
       }
     ]
   },
@@ -26,7 +54,28 @@
         "type": "string"
       },
       {
+        "name": "type",
+        "type": "string",
+        "required": true,
+        "constraints": [
+          {
+            "name": "NotNull"
+          },
+          {
+            "name": "Choice",
+            "options": [
+              {"name": "choices", "value": "test1|test2|anothertype"}
+            ]
+          }
+        ]
+      },
+      {
         "name": "currentDateField",
+        "type": "datetime",
+        "readOnly": true
+      },
+      {
+        "name": "expireDateField",
         "type": "datetime",
         "readOnly": true
       }
