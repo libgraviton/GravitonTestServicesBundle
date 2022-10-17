@@ -73,12 +73,22 @@
       {
         "name": "currentDateField",
         "type": "datetime",
-        "readOnly": true
+        "readOnly": true,
+        "constraints": [
+          {
+            "name": "Empty"
+          }
+        ]
       },
       {
         "name": "expireDateField",
         "type": "datetime",
-        "readOnly": true
+        "readOnly": true,
+        "constraints": [
+          {
+            "name": "Empty"
+          }
+        ]
       }
     ]
   }
