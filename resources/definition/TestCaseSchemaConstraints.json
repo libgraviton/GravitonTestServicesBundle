@@ -171,6 +171,16 @@
         ]
       },
       {
+        "name": "emptyField",
+        "type": "string",
+        "constraints": [
+          {
+            "name": "Empty",
+            "options": []
+          }
+        ]
+      },
+      {
         "name": "arrayCount.0",
         "type": "string",
         "constraints": [
