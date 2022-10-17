@@ -57,6 +57,7 @@
         "name": "type",
         "type": "string",
         "required": true,
+        "readOnly": true,
         "constraints": [
           {
             "name": "NotNull"
