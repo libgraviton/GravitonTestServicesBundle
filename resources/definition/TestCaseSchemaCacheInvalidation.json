@@ -19,7 +19,7 @@
         "title": "Apps",
         "description": "Apps",
         "x-dynamic-key": {
-          "document-id": "GravitonDynAppBundle:App",
+          "document-id": "GravitonDyn\\AppBundle\\Document\\App",
           "repository-method": "findAll",
           "ref-field": "name"
         }
