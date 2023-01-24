@@ -58,7 +58,7 @@
         "title": "Apps",
         "description": "All grouped apps",
         "x-dynamic-key": {
-          "document-id": "GravitonDyn\\TestCaseXDynamicKeyEntryBundle\\Document\\TestCaseXDynamicKeyEntryApp",
+          "document-id": "GravitonDyn\\TestCaseXDynamicKeyAppBundle\\Document\\TestCaseXDynamicKeyApp",
           "repository-method": "findAll",
           "ref-field": "app.ref"
         }
