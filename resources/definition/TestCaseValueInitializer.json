@@ -14,6 +14,13 @@
               "currentDateField",
               "currentDate"
             ]
+          },
+          {
+            "method": "addInitializer",
+            "arguments": [
+              "alwaysCurrentDate",
+              "currentDateSet"
+            ]
           }
         ]
       },
@@ -72,6 +79,16 @@
       },
       {
         "name": "currentDateField",
+        "type": "datetime",
+        "readOnly": true,
+        "constraints": [
+          {
+            "name": "Empty"
+          }
+        ]
+      },
+      {
+        "name": "alwaysCurrentDate",
         "type": "datetime",
         "readOnly": true,
         "constraints": [
