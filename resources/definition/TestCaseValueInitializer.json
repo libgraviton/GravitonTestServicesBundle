@@ -90,12 +90,7 @@
       {
         "name": "alwaysCurrentDate",
         "type": "datetime",
-        "readOnly": true,
-        "constraints": [
-          {
-            "name": "Empty"
-          }
-        ]
+        "readOnly": true
       },
       {
         "name": "expireDateField",
