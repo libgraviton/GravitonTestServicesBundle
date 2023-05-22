@@ -1,0 +1,34 @@
+{
+  "id": "TestCaseValueSetter",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/value-setter/",
+    "listeners": [
+      {
+        "serviceName": "Graviton\\RestBundle\\RestListener\\ValueInitializerListener",
+        "events": ["prePersist"],
+        "calls": [
+          {
+            "method": "addInitializer",
+            "arguments": [
+              "alwaysCurrentDate",
+              "currentDateSet"
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "alwaysCurrentDate",
+        "type": "datetime"
+      }
+    ]
+  }
+}
