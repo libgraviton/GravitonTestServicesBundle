@@ -54,11 +54,11 @@
       },
       {
         "name": "apps",
-        "type": "class:GravitonDyn\\TestCaseXDynamicKeyEntryBundle\\Document\\TestCaseXDynamicKeyEntryApp[]",
+        "type": "class:GravitonDyn\\TestCaseXDynamicKeyEntryBundle\\Document\\TestCaseXDynamicKeyEntry[]",
         "title": "Apps",
         "description": "All grouped apps",
         "x-dynamic-key": {
-          "document-id": "GravitonDyn\\TestCaseXDynamicKeyBundle\\Document\\TestCaseXDynamicKey",
+          "document-id": "GravitonDyn\\TestCaseXDynamicKeyEntryBundle\\Document\\TestCaseXDynamicKeyEntry",
           "repository-method": "findAll",
           "ref-field": "app.ref"
         }
