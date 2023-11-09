@@ -3,6 +3,11 @@
   "class": "Graviton\\TestServicesBundle\\Pipeline\\App",
   "route": "app",
   "type": "object",
+  "cacheTime": 300,
+  "cacheInvalidationCollections": [
+    "hans",
+    "hans3"
+  ],
   "schema": {
     "title": "Application usage",
     "description": "Data use for application access",
