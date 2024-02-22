@@ -5,12 +5,26 @@
       {
         "name": "type",
         "type": "string",
-        "required": true
+        "required": true,
+        "constraints": [
+          {
+            "name": "NotNull",
+            "options": []
+          }
+        ]
       },
       {
         "name": "protocol",
         "type": "string",
-        "required": true
+        "required": true,
+        "constraints": [
+          {
+            "name": "Choice",
+            "options": [
+              {"name": "choices", "value": "mailto|tel|address"}
+            ]
+          }
+        ]
       },
       {
         "name": "value",
@@ -19,7 +33,13 @@
       },
       {
         "name": "uri",
-        "type": "string"
+        "type": "string",
+        "constraints": [
+          {
+            "name": "NotNull",
+            "options": []
+          }
+        ]
       }
     ]
   }
