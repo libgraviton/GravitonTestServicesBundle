@@ -21,7 +21,7 @@
           {
             "name": "Choice",
             "options": [
-              {"name": "choices", "value": "mailto|tel|address"}
+              {"name": "choices", "value": "mailto|tel|address|skype|protocol"}
             ]
           }
         ]
