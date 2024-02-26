@@ -132,6 +132,20 @@
                 "recordOriginException": true
             },
             {
+                "name": "subArray.0.oneField",
+                "type": "varchar",
+                "description": "A field you can write to",
+                "title": "Two Field",
+                "recordOriginException": true
+            },
+            {
+                "name": "subArray.0.twoField",
+                "type": "varchar",
+                "description": "A field you can write to",
+                "title": "Two Field",
+                "recordOriginException": false
+            },
+            {
                 "name": "createDate",
                 "type": "DATETIME",
                 "length": 0,
