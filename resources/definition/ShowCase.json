@@ -242,14 +242,14 @@
             },
             {
                 "name": "contact",
-                "type": "class:GravitonDyn\\PersonContactBundle\\Document\\PersonContactEmbedded",
+                "type": "class:GravitonDyn\\PersonContactBundle\\Document\\PersonContact",
                 "title": "A single contact element",
                 "description": "How to contact someone..",
                 "required": false
             },
             {
                 "name": "contacts",
-                "type": "class:GravitonDyn\\PersonContactBundle\\Document\\PersonContactEmbedded[]",
+                "type": "class:GravitonDyn\\PersonContactBundle\\Document\\PersonContact[]",
                 "title": "An array of contact elements..",
                 "description": "Other ways to contact someone.."
             },
