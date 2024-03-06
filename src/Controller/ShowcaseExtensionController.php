@@ -7,7 +7,7 @@ namespace Graviton\TestServicesBundle\Controller;
 
 use Graviton\RestBundle\Controller\RestController;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
  * This is just a dummy controller for demonstrating
@@ -45,11 +45,6 @@ class ShowcaseExtensionController extends RestController
     public function allAction(Request $request)
     {
         $data = $this->getModel()->findAll($request);
-
-        $response = $this->getResponse()
-            ->setStatusCode(Response::HTTP_OK)
-            ->setContent($this->serialize($data));
-
-        return $response;
+        return JsonResponse::fromJsonString($this->serialize($data));
     }
 }

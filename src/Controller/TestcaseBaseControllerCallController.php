@@ -8,7 +8,7 @@ namespace Graviton\TestServicesBundle\Controller;
 use Graviton\RestBundle\Controller\RestController;
 use Graviton\TestServicesBundle\Service\Random;
 use Symfony\Component\HttpFoundation\Request;
-use Symfony\Component\HttpFoundation\Response;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 /**
  * @author   List of contributors <https://github.com/libgraviton/graviton/graphs/contributors>
@@ -40,10 +40,6 @@ class TestcaseBaseControllerCallController extends RestController
             $data[$idx] = $record;
         }
 
-        $response = $this->getResponse()
-            ->setStatusCode(Response::HTTP_OK)
-            ->setContent($this->serialize($data));
-
-        return $response;
+        return JsonResponse::fromJsonString($this->serialize($data));
     }
 }
