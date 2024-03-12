@@ -15,7 +15,7 @@
     }
   ],
   "route": "multipipeline",
-  "processor": "Graviton\\AnalyticsBundle\\Tests\\AnalyticsTestProcessor",
+  "processor": "Graviton\\Tests\\Analytics\\AnalyticsTestProcessor",
   "type": "array",
   "cacheTime": 0,
   "schema": {
