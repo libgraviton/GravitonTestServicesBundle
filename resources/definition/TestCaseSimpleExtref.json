@@ -1,0 +1,22 @@
+{
+  "id": "TestCaseSimpleExtref",
+  "service": {
+    "readOnly": false,
+    "routerBase": "/testcase/simpleextref/",
+    "fixtures": []
+  },
+  "target": {
+    "fields": [
+      {
+        "name": "id",
+        "type": "string"
+      },
+      {
+        "name": "requiredExtref.ref",
+        "type": "extref",
+        "exposeAs": "$ref",
+        "required": true
+      }
+    ]
+  }
+}
