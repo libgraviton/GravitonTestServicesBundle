@@ -1,0 +1,19 @@
+{
+  "id": "TestCaseGeneratorCollideEntityCategory",
+  "description": "colliding with simple field",
+  "service": {
+    "routerBase": "/testcase/generator-colliding-entity-category/"
+  },
+  "target": {
+    "indexes": [],
+    "relations": [],
+    "fields": [
+      {
+        "name": "id",
+        "type": "string",
+        "description": "unique identifier",
+        "title": "ID"
+      }
+    ]
+  }
+}

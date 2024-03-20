@@ -1,0 +1,22 @@
+{
+  "id": "TestCaseGeneratorCollideEntity",
+  "description": "colliding with simple field",
+  "service": {
+    "routerBase": "/testcase/generator-colliding-entity/"
+  },
+  "target": {
+    "indexes": [],
+    "relations": [],
+    "fields": [
+      {
+        "name": "category.ref",
+        "type": "extref",
+        "exposeAs": "$ref",
+        "collection": [
+          "Module"
+        ],
+        "required": true
+      }
+    ]
+  }
+}
